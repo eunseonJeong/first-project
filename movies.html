@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+
+<title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+<style>
+
+        * {
+        font-family: 'Gowun Dodum', sans-serif;
+}
+    .my{
+        color: white;
+
+        background-color: antiquewhite;
+        width: auto;
+        height: 300px;
+        text-align: center;
+
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg");
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+ }
+    .my > button:hover {
+        border: 1px solid white;
+    }
+
+    .card{
+
+        margin-top: 30px;
+        color: gray;
+    }
+
+    .boxs {
+        display: flex;
+    }
+
+    .wrap{
+        width: 1200px;
+        margin: auto;
+    }
+
+    .home {
+        width: 500px;
+        margin: 20px auto 0px;
+
+        box-shadow: 0px 0px 3px 0px;
+        padding: 20px;
+    }
+
+        .mybtns > button {
+            margin-right: 10px;
+        }
+</style>
+
+<script>
+
+    $.ajax({
+        type: "GET",
+        url: "http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/RealtimeCityAir/1/99",
+        data: {},
+        success: function (response) {
+            console.log(response)['RealtimeCityAir']['row'])
+        }
+    })
+function open_box(){
+    $('#button').show()
+  }
+function close_box(){
+    $('#post-box').hide()
+  }
+</script>
+
+
+</head>
+
+<body>
+<div class = "my">
+        <h1>내 생애 최고의 영화들</h1>
+       <button type="button" class="btn btn-dark">평점 기록하기</button>
+</div>
+
+<div class = "home" id = "post-box">
+
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="">
+        <label for="floatingInput">영화 URL</label>
+    </div>
+
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">별점</label>
+        <select class="form-select" id="inputGroupSelect01">
+            <option selected>선택하기</option>
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+        </select>
+    </div>
+
+        <P>
+            <textarea class="form-control" placeholder="코멘트" id="floatingTextarea"></textarea>
+        </P>
+
+
+<div class="mybtns">
+<button type="button" class="btn btn-dark">기록하기</button>
+<button onclick="close_box()" type="button" class="btn btn-outline-dark">닫기</button>
+</div>
+
+</div>
+</div>
+ </div>
+</select>
+</div>
+
+</div>
+
+<div class = "wrap"
+    <div class = "boxs">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg" class="card-img-top" alt="⭐⭐⭐">
+                    <div class="card-body">
+                        <h5 class="card-title">영화제목</h5>
+                        <p class="card-text">영화에 대한 설명이 들어가용</p>
+                        <p>⭐⭐⭐</p>
+                        <p>여기는 코멘트에용</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg" class="card-img-top" alt="⭐⭐⭐">
+                    <div class="card-body">
+                        <h5 class="card-title">영화제목</h5>
+                        <p class="card-text">영화에 대한 설명이 들어가용</p>
+                        <p>⭐⭐⭐</p>
+                        <p>여기는 코멘트에용</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg" class="card-img-top" alt="⭐⭐⭐">
+                    <div class="card-body">
+                        <h5 class="card-title">영화제목</h5>
+                        <p class="card-text">영화에 대한 설명이 들어가용</p>
+                        <p>⭐⭐⭐</p>
+                        <p>여기는 코멘트에용</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg" class="card-img-top" alt="⭐⭐⭐">
+                    <div class="card-body">
+                        <h5 class="card-title">영화제목</h5>
+                        <p class="card-text">영화에 대한 설명이 들어가용</p>
+                        <p>⭐⭐⭐</p>
+                        <p>여기는 코멘트에용</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+</div>
+
+</body>
+
+</html>
